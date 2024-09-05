@@ -1,6 +1,12 @@
 global:
   scrape_interval: 1s
 
+remote_write:
+  - url: "host.docker.internal:9090/api/v1/receive"
+    remote_timeout: "30s"
+    send_exemplars: false
+    follow_redirects: true
+
 scrape_configs:
   - job_name: "nestjs"
     static_configs:
