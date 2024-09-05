@@ -1,9 +1,0 @@
-services:
-  prometheus:
-    image: prom/prometheus:latest
-    container_name: prometheus
-    network_mode: bridge
-    volumes:
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml
-    ports:
-      - "9090:9090"
