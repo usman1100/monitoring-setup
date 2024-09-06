@@ -1,5 +1,5 @@
 global:
-  scrape_interval: 1s
+  scrape_interval: 5s
 
 remote_write:
   - url: "host.docker.internal:9090/api/v1/receive"
